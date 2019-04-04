@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+	<TextView
+		android:text="id"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+	    android:id="@+id/idVisite"
+		android:paddingLeft="15dip"/>
+	<TextView
+		android:text="date"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+	    android:id="@+id/dateVisite"
+		android:paddingLeft="15dip"/>
+	<TextView
+		android:text="compteRendu"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+	    android:id="@+id/CRVisite"
+		android:paddingLeft="15dip"/>
+	<TextView
+		android:text="practicien"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+	    android:id="@+id/practicienVisite"
+		android:paddingLeft="15dip"/>
+</LinearLayout>

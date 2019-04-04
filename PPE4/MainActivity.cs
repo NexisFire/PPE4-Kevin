@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
+using Android.Content;
 
 namespace PPE4
 {
@@ -13,7 +14,28 @@ namespace PPE4
         {
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.activity_main);
+            SetContentView(Resource.Layout.main);
+
+            Button validerButton = (Button)this.FindViewById(Resource.Id.button_valid);
+            validerButton.Click += delegate
+            {
+                string login = ((EditText)FindViewById(Resource.Id.txt_login)).Text;
+                string password = ((EditText)FindViewById(Resource.Id.txt_password)).Text;
+
+                Intent i;
+                switch (login)
+                {
+                    case "1":
+                        i = new Intent(this, typeof(HomeVisiteur));
+                        StartActivity(i);
+                        break;
+                    case "2":
+                        i = new Intent(this, typeof(HomeDelegue));
+                        StartActivity(i);
+                        break;
+                }
+                
+            };
         }
     }
 }

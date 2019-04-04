@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="15dp">
+	<EditText
+		android:inputType="textPersonName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:ems="11"
+		android:hint="@string/saisir_login"
+		android:id="@+id/txt_login" />
+	<EditText
+		android:inputType="textPassword"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:ems="11"
+		android:hint="@string/saisir_password"
+		android:layout_below="@id/txt_login"
+		android:id="@+id/txt_password" />
+	<Button
+		android:text="@string/valider"
+		android:layout_centerHorizontal="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/txt_password"
+		android:id="@+id/button_valid" />
+	
+</RelativeLayout>
