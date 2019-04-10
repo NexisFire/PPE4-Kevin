@@ -2,7 +2,9 @@
 using Android.OS;
 using Android.Support.V7.App;
 using Android.Widget;
+using Newtonsoft.Json.Linq;
 using PPE4.Model;
+using System.Linq;
 
 namespace PPE4
 {
@@ -11,6 +13,7 @@ namespace PPE4
     {
         private ListView lv;
         private VisiteAdapter va;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -19,14 +22,29 @@ namespace PPE4
             lv = (ListView)FindViewById(Resource.Id.lv_visite);
             va = new VisiteAdapter(this, Resource.Layout.lvVisite);
 
-            Visite v = new Visite();
-            v.id = "1";
-            v.date = "01/01/2010";
-            v.compteRendu = "blablabla";
-            v.practicien = "Jean Jacque";
-
-            va.Add(v);
+            string strJson = getJson();
+            JObject json = JObject.Parse(strJson);
+            for (int i = 0; i < json["visites"].Count(); i++)
+            {
+                Visite visite = new Visite();
+                visite.id = (string)json["visites"][i]["id"];
+                visite.date = (string)json["visites"][i]["date"];
+                visite.compteRendu = (string)json["visites"][i]["compteRendu"];
+                visite.practicien = (string)json["visites"][i]["practicien"];
+                va.Add(visite);
+            }
             lv.SetAdapter(va);
+        }
+
+        private string getJson()
+        {
+            return @"{ 'visites': [
+                        {
+                            'id': 1,'date': '01/01/2010',
+                            'compteRendu': 'blablabla',
+                            'practicien': 'Jean Jacque'
+                        }
+                    ]}";
         }
     }
 }

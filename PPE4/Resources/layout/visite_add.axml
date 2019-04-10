@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView
+		android:layout_marginTop = "5dp"
+		android:layout_marginLeft = "10dp"
+		android:text="Ajouter une nouvelle visite"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/textView1" />
+	<TextView
+		android:layout_marginTop = "10dp"
+		android:layout_marginLeft = "10dp"
+		android:text="Visiteur :"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2" />
+	<Spinner
+		android:layout_marginTop = "10dp"
+		android:layout_marginLeft = "10dp"
+		android:layout_marginRight = "10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/cbVisiteur" />
+	<TextView
+		android:layout_marginTop = "10dp"
+		android:layout_marginLeft = "10dp"
+		android:text="Date :"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView3" />
+	<EditText
+		android:layout_marginLeft = "10dp"
+		android:layout_marginRight = "10dp"
+		android:inputType="date"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/tbAddDate" />
+	<TextView
+		android:layout_marginTop = "10dp"
+		android:layout_marginLeft = "10dp"
+		android:text="Compte rendu :"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView4" />
+	<EditText
+		android:layout_marginLeft = "10dp"
+		android:layout_marginRight = "10dp"
+		android:inputType="textMultiLine"
+		android:layout_width="match_parent"
+		android:layout_height="84.0dp"
+		android:id="@+id/tbAddCompteRendu" />
+	<TextView
+		android:layout_marginTop = "10dp"
+		android:layout_marginLeft = "10dp"
+		android:text="Practicien :"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView5" />
+	<Spinner
+		android:layout_marginLeft = "10dp"
+		android:layout_marginRight = "10dp"
+		android:layout_marginTop = "10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/cbAddPracticien" />
+	<GridLayout
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft="10dp"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:rowCount="1"
+		android:columnCount="2"
+		android:layout_gravity="center"
+		android:id="@+id/gridLayout1">
+		<Button
+			android:text="Retour"
+			android:layout_columnWeight="1"
+			android:id="@+id/btnAddRetour" />
+		<Button
+			android:text="Ajouter"
+			android:layout_columnWeight="1"
+			android:id="@+id/btnAdd" />
+	</GridLayout>
+</LinearLayout>

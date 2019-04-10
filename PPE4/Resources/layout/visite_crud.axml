@@ -7,23 +7,79 @@
 	<TextView
 		android:text="Visite #"
 		android:layout_marginLeft="10dp"
+		android:layout_marginTop="5dp"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:minWidth="25px"
 		android:minHeight="25px"
-		android:id="@+id/textView1" />
+		android:id="@+id/tvTitle" />
 	<TextView
 		android:layout_marginTop="10dp"
 		android:layout_marginLeft="10dp"
-		android:text="dateHeure :"
+		android:text="Date :"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:id="@+id/textView1" />
 	<EditText
+		android:inputType="date"
 		android:layout_marginLeft="10dp"
 		android:layout_marginRight="10dp"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"/>
+		android:layout_height="wrap_content"
+		android:id="@+id/tbDate"/>
+	<TextView
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:text="Compte rendu :"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/textView2" />
+	<EditText
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft="10dp"
+		android:inputType="textMultiLine"
+		android:layout_width="match_parent"
+		android:layout_height="90.5dp"
+		android:id="@+id/tbCompteRendu" />
+	<TextView
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:text="Practicien :"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView3" />
+	<Spinner
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/cbPracticien" />
+	<GridLayout
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="52.0dp"
+		android:rowCount="1"
+		android:columnCount="3"
+		android:layout_gravity="center"
+		android:id="@+id/gridLayout1">
+		<Button
+			android:text="Retour"
+			android:layout_columnWeight="1"
+			android:id="@+id/btnRetour" />
+		<Button
+			android:text="Sauvegarder"
+			android:layout_columnWeight="1"
+			android:id="@+id/btnSave" />
+		<Button
+			android:text="Suprimer"
+			android:layout_columnWeight="1"
+			android:id="@+id/btnDel" />
+	</GridLayout>
 </LinearLayout>
