@@ -13,6 +13,7 @@ using Android.Widget;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using PPE4.Model;
+using PPE4.SQLite;
 
 namespace PPE4
 {
