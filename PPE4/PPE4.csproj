@@ -56,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HomeDelegue.cs" />
-    <Compile Include="HomeVisiteur.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Model\Visite.cs" />
     <Compile Include="Model\VisiteAdapter.cs" />
@@ -104,11 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\main.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\home_visiteur.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

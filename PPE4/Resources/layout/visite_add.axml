@@ -16,17 +16,17 @@
 	<TextView
 		android:layout_marginTop = "10dp"
 		android:layout_marginLeft = "10dp"
-		android:text="Visiteur :"
+		android:text="idVisiteur :"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/textView2" />
-	<Spinner
-		android:layout_marginTop = "10dp"
+	<EditText
 		android:layout_marginLeft = "10dp"
 		android:layout_marginRight = "10dp"
+		android:inputType="number"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/cbVisiteur" />
+		android:id="@+id/idVisiteur" />
 	<TextView
 		android:layout_marginTop = "10dp"
 		android:layout_marginLeft = "10dp"

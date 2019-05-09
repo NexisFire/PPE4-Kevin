@@ -15,8 +15,9 @@ namespace PPE4.Model
     public class Visite
     {
         public string id { get; set; }
+        public int idVisiteur { get; set; }
         public string date { get; set; }
         public string compteRendu { get; set; }
-        public string practicien { get; set; }
+        public int idPracticien { get; set; }
     }
 }

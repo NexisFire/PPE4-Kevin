@@ -10,6 +10,12 @@
 	    android:id="@+id/idVisite"
 		android:paddingLeft="15dip"/>
 	<TextView
+		android:text="idVisiteur"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+	    android:id="@+id/idVisiteurtxt"
+		android:paddingLeft="15dip"/>
+	<TextView
 		android:text="date"
 		android:layout_height="fill_parent"
 		android:layout_width="fill_parent"
